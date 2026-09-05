@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Undefined Kitchen</title>
-<meta name="description" content="Undefined Kitchen — ready-to-cook premixes. Launching soon in Hyderabad.">
+<meta name="description" content="Undefined Kitchen — home cooking, undefined. Launching soon in Hyderabad.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500&family=DM+Mono:wght@400;500&display=swap">
 <style>
@@ -28,25 +28,27 @@
   .tag b{color:var(--yolk);font-weight:500}
   main{flex:1;display:flex;align-items:center}
   .hero{padding:80px 0}
-  .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--yolk);margin:0 0 22px}
   h1{font-family:var(--display);font-weight:800;font-size:clamp(52px,9vw,124px);line-height:.94;letter-spacing:-.03em;margin:0 0 28px;text-wrap:balance;max-width:11ch}
   h1 em{font-style:normal;color:var(--yolk)}
   .lede{font-size:clamp(18px,1.7vw,22px);max-width:32em;color:var(--shell-dim);margin:0 0 36px}
   .soon{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--shell);
     border:1px solid var(--rule);border-radius:999px;padding:12px 18px}
   .soon i{width:8px;height:8px;border-radius:50%;background:var(--yolk);box-shadow:0 0 0 4px rgba(245,184,46,.18)}
-  footer{border-top:1px solid var(--rule);padding:28px 0 40px;font-size:14px;color:var(--sage)}
+  footer{border-top:1px solid var(--rule);padding:28px 0 40px;font-size:14px;color:var(--sage);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+  .social{display:flex;gap:18px}
+  .social a{color:var(--shell);text-decoration:none;display:inline-flex;align-items:center;gap:7px}
+  .social a:hover{color:var(--yolk)}
+  .social svg{width:18px;height:18px;fill:currentColor}
   @media (max-width:640px){
     .wrap{padding:0 22px}
     header{padding:20px 0}
     .tag{display:none}
     main{align-items:flex-start}
     .hero{padding:44px 0 40px}
-    .eyebrow{font-size:12px;margin-bottom:16px}
     h1{font-size:clamp(44px,13vw,60px);line-height:.98;margin-bottom:20px;max-width:none}
     .lede{font-size:17px;margin-bottom:28px}
     .soon{font-size:12px;letter-spacing:.1em;padding:11px 16px;white-space:nowrap}
-    footer{padding:22px 0 32px;font-size:13px}
+    footer{padding:22px 0 32px;font-size:13px;flex-direction:column;align-items:flex-start;gap:12px}
   }
 </style>
 </head>
@@ -62,7 +64,6 @@
 <main>
   <div class="wrap">
     <section class="hero">
-      <p class="eyebrow">Ready-to-cook premixes</p>
       <h1>Home cooking, un<em>defined</em>.</h1>
       <p class="lede">Real ingredients, sealed fresh, ready in minutes. We're putting the finishing touches on our first range.</p>
       <div class="soon"><i></i>Launching soon in Hyderabad</div>
@@ -71,7 +72,12 @@
 </main>
 
 <div class="wrap">
-  <footer>© 2026 Undefined Kitchen · Hyderabad, India</footer>
+  <footer>
+    <div>© 2026 Undefined Kitchen · Hyderabad, India</div>
+    <nav class="social" aria-label="Social">
+      <a href="https://www.linkedin.com/company/undefinedkitchen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/></svg>LinkedIn</a>
+    </nav>
+  </footer>
 </div>
 
 </body>
